@@ -1,7 +1,7 @@
 """
 FHIR Patient Data Viewer — Streamlit App
 Supports both bulk upload (ZIP of FHIR JSON bundles) and single patient upload.
-Compatible with Synthea-generated FHIR R4 cardiology bundles.
+Compatible with Synthea-generated FHIR R4 bundles.
 """
 
 import streamlit as st
@@ -23,7 +23,7 @@ import plotly.graph_objects as go
 
 st.set_page_config(
     page_title="FHIR Patient Viewer",
-    page_icon="🫀",
+    page_icon="🩺",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -700,8 +700,8 @@ if "upload_mode"   not in st.session_state: st.session_state.upload_mode   = "Bu
 
 st.markdown("""
 <div class="main-header">
-    <h1>🫀 FHIR Patient Viewer</h1>
-    <p>Cardiology patient data explorer — FHIR R4 Bundle format</p>
+    <h1>🩺 FHIR Patient Viewer</h1>
+    <p>Patient data explorer — FHIR R4 Bundle format</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -798,7 +798,7 @@ if not st.session_state.bundles:
 
     **Supported formats:**
     - **Bulk upload** — ZIP file containing multiple FHIR R4 JSON bundles  
-      *(e.g. `cardiology_100_fhir.zip` from Synthea)*
+      *(e.g. a Synthea FHIR ZIP bundle)*
     - **Single patient** — A single FHIR JSON bundle file
 
     **What you'll see:**

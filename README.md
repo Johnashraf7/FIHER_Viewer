@@ -8,7 +8,7 @@ FHIR Patient Viewer is a Streamlit web app for exploring patient data stored as 
 - Patient demographics and summary metrics
 - Interactive charts for vital signs and population insights
 - Tables for conditions, medications, encounters, labs, diagnostic reports, immunizations, and procedures
-- Compatible with Synthea-generated FHIR R4 cardiology bundles
+- Compatible with Synthea-generated FHIR R4 bundles
 
 ## Project Files
 - `fhir_patient_viewer.py` - main Streamlit application
